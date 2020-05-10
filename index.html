@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gbo5nxs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Searching For Persistence</title>
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+<div class="fixed_link">
+    <a target="_blank" class="port" href="https://www.alyssajoines.com/"><img class="small" src="media/a-06.png"></a>
+</div>
+<div id="nav">
+    <li><a class="active" href="#intro">Introduction</a></li>
+    <li><a href="#topo">Topology</a></li>
+    <li><a href="#proto1">Experimental Prototypes: 1</a></li>
+    <li><a href="#tda">Topological Data Analysis</a></li>
+    <li><a href="#proto2">Experimental Prototypes: 2</a></li>
+    <li><a href="#final">Final Forms</a></li>
+    <li><a href="#sum">Discussion</a></li>
+    <li><a href="#gloss">Glossary</a></li>
+</div>
+
+<!-- FIXED MEDIA -->
+<!-- Prototype 1 -->
+<video id="fixed_m1" autoplay loop width="300">
+    <source src="media/deformation1.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<!-- Prototype 1.2 -->
+<video id="fixed_m2" autoplay loop width="300">
+    <source src="media/deformation2.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+<!-- Prototype 2 -->
+<video id="fixed_m3" autoplay loop width="300">
+    <source src="media/proto5.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+<!-- SLIDES HORIZONTAL FLEX -->
+<div class="wrapper">
+    <div>
+        <img class="title" src="media/title-06.png">
+    </div>
+
+    <div>
+        <video class="full" autoplay loop>
+            <source src="media/tall_render.mp4"
+                    type="video/mp4">
+        
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </div>
+
+    <div id = "intro" class ="intro slide">
+        <h2>Introduction</h2>
+            <p><span class="bold">Searching for Persistence</span> is the summation of a series of investigations that explore how mathematics can give structure to complex information using concepts from Topology. The discipline of Topology is focused on the study of geometric properties and spatial relationships that are unaffected by continuous change or deformation. In other words, the study of persistence. The digital kinetic forms generated throughout this research project are the manifestation of a new synthesis of methodologies for visualization that combines mathematics, art, and technology.</p>
+            <p>The purpose of this research is to expand on the tools that are currently in use for visualization. While there are many techniques, the majority focus on two-dimensional representations of simplified data. The techniques which have been employed throughout this process embrace a more spatial understanding of information that is represented in three-dimensional projections and forms. The primary advantage of spatial representation is that it gives information a tangible structure that allows for an analysis based on physical properties or behavior. This is an exciting notion that opens the door for future explorations of texture, density, and many other physical characteristics.</p>
+            <p>One of the driving questions behind this project is focused on how current mathematical tools can be incorporated into a design-centered process. Traditionally mathematics is presented in a standardized, uninspiring, and contextless manner which negatively affects the foundation of our relationship with the subject. When entering design or art school many assume that mathematics is a subject they will never have to approach again. This project sheds light on the exciting nature of applied mathematics when presented in a more creative context. It offers an example of how you can expand or enhance your practice through the incorporation of mathematics.</p>
+    </div>
+
+    <div id ="topo" class="topo slide">
+        <h2>Topology</h2>
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id = "proto1" class="proto1 slide">
+        <h2>Experimental Prototypes: 1</h2>
+        <div class="flex">
+            <div class = "columns_even">
+                <p>After identifying the subject matter for this project, this prototype was dedicated to exploring pre-existing tools that could be used in the creation of homeomorphic surfaces. Since the rules of homeomorphisms state that there can be no cutting, puncturing, or gluing these animations demonstrate the seamless transition from one surface to another.</p>
+                <p>Using Cinema 4D, both a cube and a sphere were manipulated using built-in deformers that allowed for animation. This prototype confirmed a potentially useful mechanism for generating visual representations of homeomorphic surfaces with a pre-existing 3D tool. </p>
+            </div>
+            <div class = "columns_even">
+                <p id="bump" >The following prototype took a programmatic approach to the generation of homeomorphisms. Using sets of points, this prototype explored the subject through a two-dimensional lens. That is not to say that these points could not also move along the z-axis. Created using p5.js, this grid of sets conveyed the many possible ways these points could be organized while still maintaining topological equivalence. To maintain clarity, the central node of each set is anchored in the middle. This experiment made it clear that working in 3D would allow for the creation of more complex surfaces and transitions that express a sense of volume or surface.</p>
+            </div>
+            <div class = "columns_even">
+                <p>In the previous prototypes, the generation of homeomorphisms had not been controlled or planned. What I mean by this is that for the sphere and cube there was no particular end result in mind when deformed and that the sets of points were randomly generated. For this experiment, the goal was to deform a surface with intention. The first step in this was determining what to use as the target surface. The chosen form was the Euler Spiral, also known as the Cornu Spiral because a curve is an intuitive shape to transition to from a sphere. After experimenting with the different methods of transformation in the last prototypes, this one returned to Cinema4D. Another goal of this prototype was to explore the visual identity and framing of these deformations. This iteration was set in a gallery-style scene in order to convey the fact that this is meant to be seen as a type of sculpture, not simply a contextless animation. The metallic texture created reflections that emphasize the form well.
+            </div>
+        </div>
+    </div> 
+
+    <div>
+        <video class="full" autoplay loop>
+            <source src="media/euler.mp4"
+                    type="video/mp4">
+        
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </div>
+    
+    <div id="tda" class="tda slide">
+        <h2>Topological Data Analysis (TDA)</h2>
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id = proto2 class="proto2 slide">
+        <h2>Experimental Prototypes: 2</h2>
+        <div class="flex">
+            <div class = "columns_even">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class = "columns_even">
+                <img class="proto_img" src="media/thesis_doc_3.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="final" class="final slide">
+        <h2>Final Forms</h2>
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id="sum" class="sum slide">
+        <h2>Discussion</h2>
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id = "gloss" class="gloss slide">
+        <h2 class="center_head">Glossary</h2>
+        <div class="flex">
+            <div class = "columns_even">
+                <ul>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                </ul>
+            </div>
+            <div class = "columns_even">
+                <ul>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                </ul>            
+            </div>
+            <div class = "columns_even">
+                <ul>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                    <li>Glossary: List of essential terms with definitions.</li>
+                </ul>            
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

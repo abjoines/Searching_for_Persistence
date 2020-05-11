@@ -25,7 +25,7 @@
     <li><a href="#proto2">Experimental Prototypes: 2</a></li>
     <li><a href="#final">Final Forms</a></li>
     <li><a href="#sum">Discussion</a></li>
-    <li><a href="#gloss">Glossary</a></li>
+    <!-- <li><a href="#gloss">Glossary</a></li> -->
 </div>
 
 <!-- FIXED MEDIA -->
@@ -52,6 +52,11 @@
     Sorry, your browser doesn't support embedded videos.
 </video>
 
+<div>
+    <img id="fixed_m4" src="media/sets.png">
+</div>
+
+
 <!-- SLIDES HORIZONTAL FLEX -->
 <div class="wrapper">
     <div>
@@ -76,14 +81,32 @@
 
     <div id ="topo" class="topo slide">
         <h2>Topology</h2>
-        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="flex">
+            <div class = "columns_even">
+                <p>As stated in the introduction, Topology is defined as the study of geometric properties and spatial relationships unaffected by the continuous change of shape or size of figures. As such, the classic joke is that a topologist cannot tell the difference between a donut and a coffee cup. This is because the focus is much more granular than the appearance of the overall surface. The affordances of topological space allow for an exploration of surfaces through their properties instead of their appearances. Surfaces are described by the structure of the sets of points they are composed of rather than their overall form.</p>
+                <img width="275" src="media/homeo.png">
+            </div>
+            <div class = "columns_even">
+                <p>When looking into Topology one of the main concepts which I found intriguing was Homeomorphisms. A homeomorphisms is defined as a continuous transformation where the sets of points on two surfaces have a one to one correspondence and therefore are topologically equated. Due to the lack of metric or measure in topological space, the structure of the surface is defined by these sets of points. This is the root of the coffee cup joke. </p>
+                <p>An easy way to visualize this concept is to imagine a blob of stick putty or slime. When you first got the blob it was in the shape of a heart. You then push, pull, and stretch that same blob into a circle or some other fun shape. As long you you haven’t punctured, cut, or glued any part of the blob, those two forms are homeomorphic or topologically equivalent.</p>
+            </div>
+            <div class = "columns_even">
+                <video autoplay loop width="125">
+                    <source src="media/pink_cube.mp4"
+                            type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p>These concepts provide a new way of looking at three dimensional surfaces. Learning about the idea of homeomorphisms pushed me to think about forms in terms of their underlying structures and properties instead of how I might visually perceive them. Getting into the concepts of invariance, connectedness, boundaries, and transformation, things get even more interesting. These exciting notions could be employed in any number of art or design projects. The first set of experimental prototypes explores the visual representation of these concepts. </p>
+            </div>
+        </div>
     </div>
 
     <div id = "proto1" class="proto1 slide">
         <h2>Experimental Prototypes: 1</h2>
         <div class="flex">
             <div class = "columns_even">
-                <p>After identifying the subject matter for this project, this prototype was dedicated to exploring pre-existing tools that could be used in the creation of homeomorphic surfaces. Since the rules of homeomorphisms state that there can be no cutting, puncturing, or gluing these animations demonstrate the seamless transition from one surface to another.</p>
+                <p><span class="bold">During the first half of this project, the approach for these prototypes was primarily focused on experimenting with different methods of producing homeomorphic surfaces and sets while learning more about topology along the way.</span></p>
+                <p>After identifying the subject matter for this project, this first prototype was dedicated to exploring pre-existing tools that could be used in the creation of homeomorphic surfaces. Since the rules of homeomorphisms state that there can be no cutting, puncturing, or gluing these animations demonstrate the seamless transition from one surface to another.</p>
                 <p>Using Cinema 4D, both a cube and a sphere were manipulated using built-in deformers that allowed for animation. This prototype confirmed a potentially useful mechanism for generating visual representations of homeomorphic surfaces with a pre-existing 3D tool. </p>
             </div>
             <div class = "columns_even">
@@ -106,16 +129,31 @@
     
     <div id="tda" class="tda slide">
         <h2>Topological Data Analysis (TDA)</h2>
-        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="flex">
+            <div class = "columns_even">
+                <p>After the end of the first round of research and prototyping I began considering more options for input to define surfaces and so I looked toward data. My research led me to Topological Data Analysis or TDA. TDA is, as its name describes, a method of data analysis which uses techniques from Topology. This type of data analysis is particularly useful for high-dimensional, noisey, or incomplete data sets.</p>
+                <p>When it comes time to analyze a data set, the shape of that data set matters in choosing the modeling method. For example linear regression for a line, clustering for points, and so on. The advantage of TDA is that it’s a modeling method that works for all shapes that can be computed easily.</p>
+            </div>
+            <div class = "columns_even">
+                <img class="persist" src="media/persist.png">
+                <p>This is important in this time of big data where the information that needs to be analyzed is complex and comprehensive. TDA has been used in the analysis of sound, text, precision medicine, and much more. The value of this methodology, even more so than other modeling methods, is in its ability to reveal connections and patterns that aren’t immediately present. One specific technique within TDA that is particularly good at this is Persistent Homology.</p>
+            </div>
+            <div class = "columns_even">
+                <p>Persistent Homology is a method for computing topological features at different resolutions. It is the process of the creation of simplicial complexes from different sized radii around each point in the data set. When the radii overlap a link is drawn between the corresponding points. When they intersect they are also recorded on a diagram which keeps track of the birth and the death of each of these features. The purpose of this is to identify those that persist throughout each level of scale. Examples of topological features that we would be keeping track of include components, clusters, and holes of different dimensions.</p>
+            <p>Identifying these features allows us to clearly define the structure of a data set. Defining the structure gives us insight into the behavior and properties of the data.</p>
+            </div>
+        </div>
     </div>
 
     <div id = proto2 class="proto2 slide">
         <h2>Experimental Prototypes: 2</h2>
         <div class="flex">
             <div class = "columns_even">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>After completing this second bit of research, I began to experiment and develop my own methodology which is a synthesis of Python based TDA tools. I chose to use a data set from Information is Beautiful which contained the records of various data breaches throughout the last few decades. This data set is probably incomplete but still works for my purposes. While I am including an explanation of this data, I want to keep the focus on the tools themselves and less so on what is being modeled since this is still an experimental methodology.</p>
+                <p>The images on the right are from the analysis of one year of this data. To create these graphs I first cleaned up the data, separated it by year, and chose three variables which were representative of the scale and quality of the event which they corresponded to. Through the use of the Python libraries Scikit-TDA/Ripser.py and Matplotlib I generated these images. The top left and bottom left are 3D plottings of the data with and without triangular polygons. These represent the distribution in space. The TDA takes place in the generation of the diagram on the right. This is a persistent homology diagram which, as described in the TDA research section, keeps track of the features which are present in the 3D plotting of the data, specifically holes. As you can see the axes are the birth and death of each feature.</p>
             </div>
             <div class = "columns_even">
+                <p>The next step for this project is to take the form of data, as described by these persistent homology diagrams, and bring it back into the context of homeomorphisms. What this means is that if I have a data set and I've identified its structure as that of a torus, I can then say that it will behave the same as if it took the form of a coffee mug.</p>
                 <img class="proto_img" src="media/thesis_doc_3.png">
             </div>
         </div>
@@ -123,47 +161,35 @@
 
     <div id="final" class="final slide">
         <h2>Final Forms</h2>
-        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="flex">
+            <div class = "columns_even">
+                <img class="proto_img" src="media/final_persist-07.png">
+            </div>
+            <div class = "columns_even">
+                <p>The final presentation of this project is as a web “book” (which you are reading now). It reads horizontally to imitate the experience of reading a book and serves as documentation of this research and prototyping process. As the goals of this project are centered around making mathematics more approachable and reimagining methods of visualization, creating a web book gives perpetual access to viewers and allows me to continue to update my work. I hope that this will operate not only as a display of my achievements but also as a sort of manual for others. As a research project based in experimentation it is also extremely important to document the details of the methods and outcomes. </p>    
+                <p>I had planned to have rendered animations of the surfaces developed through TDA as well. This project was slowed down dramatically due to the circumstances resulting from the current pandemic. I had hoped to have made further progress by this point but regardless I will be continuing my research and experimentation after this exhibition. </p>
+            </div>
+        </div>
     </div>
 
     <div id="sum" class="sum slide">
         <h2>Discussion</h2>
-        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="flex">
+            <div class = "columns_even">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class = "columns_even">
+                <h2 class="bio">Alyssa Joines</h2>
+                <h2 class="bio">BFA DT Thesis</h2>
+                <h2 class="bio">2020</h2>
+                <img class="bio" src="media/headshot.JPG">
+            </div>
+        </div>
     </div>
 
     <div id = "gloss" class="gloss slide">
-        <h2 class="center_head">Glossary</h2>
-        <div class="flex">
-            <div class = "columns_even">
-                <ul>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                </ul>
-            </div>
-            <div class = "columns_even">
-                <ul>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                </ul>            
-            </div>
-            <div class = "columns_even">
-                <ul>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                    <li>Glossary: List of essential terms with definitions.</li>
-                </ul>            
-            </div>
+        <div class="middle">
+            <img class="end" src="media/thesis_title-06.png">
         </div>
     </div>
 </div>
